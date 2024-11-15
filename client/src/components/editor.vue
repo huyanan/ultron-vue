@@ -1,7 +1,7 @@
 <!--
  * @Author: HuYanan
  * @Date: 2021-08-13 11:19:38
- * @LastEditTime: 2021-08-13 19:08:40
+ * @LastEditTime: 2023-01-03 10:56:04
  * @LastEditors: HuYanan
  * @Description: 
  * @Version: 0.0.1
@@ -11,18 +11,18 @@
 
 <template>
   <div class="editor">
-    <Menu />
+    <TopMenu />
     <ToolBox/>
   </div>
 </template>
 
 <script>
-import Menu from './menu.vue'
+import TopMenu from './TopMenu.vue'
 import ToolBox from './ToolBox.vue'
 export default {
   name: 'HelloWorld',
   components: {
-    Menu,
+    TopMenu,
     ToolBox
   },
   props: {
@@ -33,11 +33,11 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
-  .editor {
-    ::v-deep {
-      .ToolBox {
-        top: 36px;
-      }
-    }
-  }
+  // .editor {
+  //   ::v-deep {
+  //     .ToolBox {
+  //       top: 36px;
+  //     }
+  //   }
+  // }
 </style>
